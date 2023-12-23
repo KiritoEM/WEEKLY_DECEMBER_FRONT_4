@@ -19,7 +19,16 @@
         }
     }
 
-    .testimonials-content{
+    .testimonials-content {
         margin-top: 50px;
+    }
+
+    .testimonials-responsive {
+        margin-top: 50px;
+
+        @include screen(small) {
+            padding-left: 11%;
+            padding-right: 11%;
+        }
     }
 }

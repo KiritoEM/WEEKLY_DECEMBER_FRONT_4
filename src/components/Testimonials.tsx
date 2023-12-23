@@ -8,10 +8,20 @@ const Testimonials = (): JSX.Element => {
       <div className="title">
         <h2>Testimonials</h2>
       </div>
-      <div className="testimonials-content">
+      <div className="testimonials-content d-none d-md-flex">
         <div className="row gy-4">
-          {testimonialsData.map((item, index) => (
-            <div className="col-6" key={index}>
+          {testimonialsData.testimonial_desktop.map((item, index) => (
+            <div className="col-md-6" key={index}>
+              <TestimonialsCard {...item} />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="testimonials-responsive d-md-none">
+        <div className="row gy-4">
+          {testimonialsData.testimonial_responsive.map((item, index) => (
+            <div className="col-md-6" key={index}>
               <TestimonialsCard {...item} />
             </div>
           ))}

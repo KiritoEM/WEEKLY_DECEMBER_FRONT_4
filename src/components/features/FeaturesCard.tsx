@@ -1,13 +1,21 @@
-const FeaturesCard = (): JSX.Element => {
+interface IfeaturesProps {
+  img: string;
+  title: string;
+}
+
+const FeaturesCard: React.FC<IfeaturesProps> = ({
+  img,
+  title,
+}): JSX.Element => {
   return (
     <div className="features-card">
       <div className="features-card__header">
         <div className="img">
-          <img src="/features-1.png" alt="" />
+          <img src={img} alt="" />
         </div>
         <div className="title">
           {" "}
-          <h5>A single source of truth</h5>
+          <h5>{title}</h5>
         </div>
       </div>
       <div className="features-card__text">

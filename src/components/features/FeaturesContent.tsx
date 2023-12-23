@@ -1,7 +1,9 @@
 import Image from "next/image";
 import FeaturesCard from "./FeaturesCard";
+import features from "@/helpers/data/features";
 
 const FeaturesContent = (): JSX.Element => {
+  const { featuresPoints } = features();
   return (
     <div className="section-content mt-5">
       <div className="row gx-5">
@@ -18,7 +20,9 @@ const FeaturesContent = (): JSX.Element => {
         </div>
         <div className="col-4">
           <div className="points">
-            <FeaturesCard />
+            {featuresPoints.map((item, index) => (
+              <FeaturesCard key={index} {...item} />
+            ))}
           </div>
         </div>
       </div>

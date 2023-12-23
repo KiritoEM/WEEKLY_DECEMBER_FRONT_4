@@ -25,4 +25,23 @@
             width: 45%;
         }
     }
+
+    .section-content {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        .points {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 41px;
+        }
+
+        .cover{
+            display: flex;
+            align-items: center;
+        }
+    }
 }

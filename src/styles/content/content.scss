@@ -4,6 +4,7 @@
     width: 100%;
     overflow: hidden;
     background-color: $background-color;
+    margin-top: -4px;
     padding-top: 4rem;
     padding-bottom: 4rem;
     @include container;
@@ -26,12 +27,22 @@
 
 
             @include screen(small) {
-                width: 87%;
+                width: 80%;
             }
 
             @include screen(medium) {
                 width: 65%;
             }
+        }
+    }
+
+    .section-points {
+
+        @include screen(small) {
+            justify-content: center;
+            padding-left: 11%;
+            padding-right: 11%;
+            text-align: center;
         }
     }
 }

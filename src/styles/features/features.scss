@@ -35,7 +35,7 @@
             }
 
             @include screen(medium) {
-                width: 65%;   
+                width: 65%;
             }
         }
     }
@@ -59,8 +59,8 @@
 
 
             @include screen(small) {
-                padding-left: 9.5%;
-                padding-right: 9.5%;
+                padding-left: 12%;
+                padding-right: 12%;
             }
         }
 
@@ -72,8 +72,8 @@
 
             @include screen(small) {
                 justify-content: center;
-                padding-left: 8%;
-                padding-right: 8%;
+                padding-left: 9.5%;
+                padding-right: 9.5%;
                 text-align: center;
             }
         }

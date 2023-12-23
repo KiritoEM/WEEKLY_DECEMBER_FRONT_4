@@ -2,8 +2,16 @@
     width: 100%;
     height: max-content;
     background-color: #fff;
-    border-radius: 17px;
-    padding: 31px;
+    border-radius: 10px;
+    padding: 50px 35px 20px 35px;
+
+    @include screen(small) {
+        padding: 42px 25px 25px 25px;
+    }
+
+    @include screen(medium) {
+        padding: 50px 25px 0 25px;
+    }
 
     &__header {
         margin: auto;
@@ -26,33 +34,51 @@
                 color: #5C5C5C;
                 width: 64%;
                 text-align: center;
+
+                @include screen(small) {
+                    width: 95%;
+                }
             }
         }
 
-        .button{
+        .button {
             width: 100%;
             display: flex;
             justify-content: center;
             margin-top: 20px;
 
-             .btn{
+            @include screen(small) {
+                  margin-top: 40px;
+            }
+
+            .btn {
                 padding: 10px 49px;
                 border-radius: 0;
                 background-color: $primary;
                 font-size: 14px;
                 color: #fff;
                 font-weight: 500;
-             }
+            }
         }
     }
 
-    &__img{
+    &__img {
         margin-top: 50px;
 
-         img{
+        @include screen(small) {
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
             height: 18rem;
             width: 100%;
             object-fit: contain;
-         }
+
+            @include screen(small) {
+                height: 100%;
+                width: 100%;
+            }
+        }
     }
 }

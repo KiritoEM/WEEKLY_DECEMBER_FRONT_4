@@ -5,9 +5,9 @@ const ContentPoints = () => {
   const { contentData } = content();
   return (
     <section className="section-points mt-4">
-      <div className="row">
+      <div className="row gy-4 gy-md-2">
         {contentData.map((item, index) => (
-          <div className="col-6" key={index}>
+          <div className="col-md-6" key={index}>
             <ContentCard {...item} />
           </div>
         ))}

@@ -1,5 +1,60 @@
-.welcoming-hero{
+.welcoming-hero {
     width: 100%;
+    padding-top: 6rem;
+    margin-top: 5.5rem;
+    padding-bottom: 4rem;
     overflow: hidden;
-    background-color: $b;
+    background-color: $background-color;
+
+    .title {
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-size: 2.96em;
+            width: 30%;
+            font-weight: 500;
+        }
+    }
+
+    .text {
+        display: flex;
+        justify-content: center;
+        margin: 17px;
+
+        p {
+            color: #fff;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        .btn-1 {
+
+            .btn {
+                background-color: $primary;
+            }
+        }
+
+        .btn-2 {
+
+            .btn {
+                border: 1px solid #fff;
+            }
+        }
+
+
+        .btn {
+            padding: 14px 36px;
+            border-radius: 0;
+            font-size: 14px;
+            color: #fff;
+            font-weight: 500;
+        }
+    }
 }

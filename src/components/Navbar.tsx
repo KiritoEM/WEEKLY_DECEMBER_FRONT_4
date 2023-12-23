@@ -1,8 +1,11 @@
 import MenuIcon from "./navbar/MenuIcon";
 import MenuItems from "./navbar/MenuItems";
 import NavbarResponsive from "./navbar/NavbarResponsive";
+import { useNav } from "@/hooks/useNav";
+import Overlay from "./navbar/Overlay";
 
 const Navbar = (): JSX.Element => {
+  const { menuToogle, openMenu, openOverlay } = useNav();
   return (
     <nav id="navbar">
       <div id="navbar__container">
@@ -12,10 +15,11 @@ const Navbar = (): JSX.Element => {
         <MenuItems />
         <section className="section-button">
           <button className="btn">Login</button>
-          <MenuIcon />
+          <MenuIcon action={menuToogle} />
         </section>
       </div>
-      <NavbarResponsive />
+      <NavbarResponsive openMenu={openMenu} />
+      <Overlay overlay={openOverlay} />
     </nav>
   );
 };

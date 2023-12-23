@@ -1,45 +1,70 @@
-.nav-responsive{
-    width: 100%;
+.nav-responsive {
+    position: relative;
+    z-index: 70;
     height: 100vh;
     margin-top: -2px;
     background-color: $secondary;
     padding-top: 2.5rem;
+    overflow: hidden;
 
-     ul{
+    ul {
         display: flex;
         flex-direction: column;
-        gap: 34px;
+        gap: 29.5px;
         height: max-content;
         align-items: center;
         padding-left: 0;
 
-        li{
+        li {
             color: #fff;
             font-weight: 500;
             font-size: 18px;
         }
 
-        #footer{
+        #footer {
             width: 100%;
             padding-left: 7%;
             padding-right: 7%;
             margin-top: 14px;
 
-            .line{
+            .line {
                 width: 100%;
                 height: 2px;
                 border-radius: 17px;
                 background-color: #fff;
             }
 
-            .text{
+            .text {
                 margin-top: 14px;
                 text-align: center;
 
-                 p{
+                p {
                     font-size: 16px;
-                 }
+                }
             }
         }
-     }
+    }
+}
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.692);
+    position: fixed;
+    top: 0;
+    z-index: 60;
+}
+
+.open-menu {
+    width: 100%;
+    transition: 0.2s;
+
+    @include screen(medium) {
+        width: 50%;
+    }
+}
+
+.close-menu {
+    width: 0;
+    transition: 0.04s;
 }

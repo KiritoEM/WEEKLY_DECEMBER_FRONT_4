@@ -1,0 +1,32 @@
+.features-card {
+    width: 75%;
+    height: max-content;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        .title {
+            display: flex;
+            height: 100%;
+            align-items: flex-end;
+
+            h5 {
+                color: #fff;
+                font-weight: 500;
+                margin-bottom: 0;
+                margin-top: 11px;
+                width: 87%;
+            }
+        }
+    }
+
+    &__text{
+        margin-top: 18px;
+
+         p{
+            color: #fff;
+         }
+    }
+}

@@ -1,9 +1,9 @@
 import navbar from "@/helpers/data/navbar";
 
-const MenuItems = (): JSX.Element => {
+const NavbarResponsive = (): JSX.Element => {
   const { menuItems } = navbar();
   return (
-    <section className="section-menuitems d-none d-lg-flex">
+    <section className="nav-responsive d-lg-none">
       <ul>
         {menuItems.map((item, index) => (
           <li key={index}>{item.label}</li>
@@ -13,4 +13,4 @@ const MenuItems = (): JSX.Element => {
   );
 };
 
-export default MenuItems;
+export default NavbarResponsive;

@@ -1,4 +1,6 @@
+import MenuIcon from "./navbar/MenuIcon";
 import MenuItems from "./navbar/MenuItems";
+import NavbarResponsive from "./navbar/NavbarResponsive";
 
 const Navbar = (): JSX.Element => {
   return (
@@ -9,11 +11,11 @@ const Navbar = (): JSX.Element => {
         </section>
         <MenuItems />
         <section className="section-button">
-             <button className="btn">
-                 Login
-             </button>
+          <button className="btn">Login</button>
+          <MenuIcon />
         </section>
       </div>
+      <NavbarResponsive />
     </nav>
   );
 };

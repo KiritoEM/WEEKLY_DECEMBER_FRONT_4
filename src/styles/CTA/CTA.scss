@@ -12,6 +12,11 @@
         padding-right: 0;
     }
 
+    @include screen(medium) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     &__container {
         width: 100%;
         height: max-content;
@@ -22,6 +27,11 @@
         @include screen(small) {
             border-radius: 0;
         }
+
+        @include screen(medium) {
+            border-radius: 0;
+        }
+    
 
         .section-header {
             padding: 60px;

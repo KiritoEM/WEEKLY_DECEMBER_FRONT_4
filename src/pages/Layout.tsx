@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { NavProvider } from "@/hooks/useNav";
 import React, { Fragment, ReactNode } from "react";
@@ -12,6 +13,7 @@ const Layout: React.FC<Ichildren> = ({ children }): JSX.Element => {
       <NavProvider>
         <Navbar />
         {children}
+        <Footer />
       </NavProvider>
     </Fragment>
   );

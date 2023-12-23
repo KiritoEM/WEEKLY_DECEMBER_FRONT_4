@@ -11,6 +11,11 @@ $secondary : #202020;
     font-family: 'Graphik Trial', sans-serif;
 }
 
+body{
+    width: 100%;
+    background-color: $background-color;
+}
+
 @mixin screen($breakpoint) {
     @if $breakpoint ==small {
         @media (max-width: 767px) {

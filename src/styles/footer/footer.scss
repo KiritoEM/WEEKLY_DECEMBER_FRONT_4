@@ -1,0 +1,81 @@
+#footer {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 4rem;
+    margin-top: 5.2rem;
+    padding-bottom: 4rem;
+    background-color: $background-color;
+    @include container;
+
+    @include screen(small){
+        padding-left: 21%;
+        padding-right: 21%;  
+        padding-top: 0;
+    }
+
+    .footer-link {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+
+        .title {
+
+            h6 {
+                color: #fff;
+                font-weight: 500;
+            }
+        }
+
+        .link {
+
+            ul {
+                padding-left: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 21px;
+
+                li {
+                    color: #fff;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .contact {
+
+        .adress {
+            display: flex;
+            gap: 8px;
+            height: 100%;
+            align-items: center;
+
+            p {
+                color: #fff;
+                margin-bottom: 0;
+            }
+        }
+
+        .phone {
+            display: flex;
+            gap: 8px;
+            margin-top: 17px;
+            height: 100%;
+            align-items: center;
+
+            p {
+                color: #fff;
+                margin-bottom: 0;
+            }
+        }
+
+        .socialIcons {
+            margin-top: 5px;
+
+            img {
+                width: 170px;
+                object-fit: contain;
+            }
+        }
+    }
+}

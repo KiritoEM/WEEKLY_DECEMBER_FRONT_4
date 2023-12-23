@@ -1,10 +1,13 @@
-import React from 'react';
+import React from "react";
+import Layout from "./Layout";
+import MetaTitle from "@/components/MetaTitle";
 
-const Landing = () : JSX.Element => {
+const Landing = (): JSX.Element => {
   return (
-    <section id='landing-page'>
-      
-    </section>
+    <Layout>
+      <MetaTitle title="Figma Land"/>
+      <section id="landing-page"></section>
+    </Layout>
   );
 };
 

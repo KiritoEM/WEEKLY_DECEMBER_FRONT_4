@@ -4,6 +4,7 @@ import MetaTitle from "@/components/MetaTitle";
 import Welcoming from "@/components/Welcoming";
 import Features from "@/components/Features";
 import Content from "@/components/Content";
+import Gallery from "@/components/Gallery";
 
 const Landing = (): JSX.Element => {
   return (
@@ -13,6 +14,7 @@ const Landing = (): JSX.Element => {
         <Welcoming />
         <Features />
         <Content />
+        <Gallery />
       </section>
     </Layout>
   );

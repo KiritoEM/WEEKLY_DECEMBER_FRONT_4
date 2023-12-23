@@ -1,0 +1,88 @@
+#gallery {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 4rem;
+    margin-top: -5px;
+    padding-bottom: 4rem;
+    background-color: $background-color;
+    @include container;
+
+    @include screen(small) {
+        padding-top: 6rem;
+    }
+
+    .section-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            color: #fff;
+            font-weight: 400;
+        }
+
+        p {
+            color: #fff;
+            text-align: center;
+            margin-top: 8px;
+            width: 45%;
+
+
+            @include screen(small) {
+                width: 87%;
+            }
+
+            @include screen(medium) {
+                width: 65%;
+            }
+        }
+    }
+
+    .section-content {
+        width: 100%;
+
+        .section-desktop {
+            width: 100%;
+
+            .section-1 {
+                display: flex;
+                gap: 25px;
+                padding-left: 4%;
+                padding-right: 4%;
+
+                .img {
+                    width: 100%;
+                    height: 15rem;
+
+                    img {
+                        border-radius: 10px;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .section-2 {
+                display: flex;
+                margin-top: 42px;
+                gap: 25px;
+                width: 100%;
+
+                .img {
+                    height: 15rem;
+                    width: 100%;
+
+                    img {
+                        border-radius: 10px;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+
+                #img-2{
+                    width: 35rem;
+                }
+            }
+        }
+    }
+}

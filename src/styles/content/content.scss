@@ -1,0 +1,36 @@
+@import "./content-card.scss";
+
+#content {
+    width: 100%;
+    overflow: hidden;
+    background-color: $background-color;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    .section-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            color: #fff;
+            font-weight: 400;
+        }
+
+        p {
+            color: #fff;
+            text-align: center;
+            margin-top: 8px;
+            width: 45%;
+
+
+            @include screen(small) {
+                width: 87%;
+            }
+
+            @include screen(medium) {
+                width: 65%;
+            }
+        }
+    }
+}

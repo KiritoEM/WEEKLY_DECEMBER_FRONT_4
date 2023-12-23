@@ -1,14 +1,14 @@
 .features-card {
-    padding-right: 25%;
+    padding-right: 5%;
     height: max-content;
 
 
     @include screen(small) {
-        padding-right: 15%;
+        padding-right: 5%;
     }
 
     @include screen(medium) {
-        padding-right: 22%;               
+        padding-right: 6%;               
     }
 
     &__header {

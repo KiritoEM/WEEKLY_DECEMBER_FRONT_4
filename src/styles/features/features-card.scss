@@ -1,6 +1,15 @@
 .features-card {
-    width: 75%;
+    padding-right: 25%;
     height: max-content;
+
+
+    @include screen(small) {
+        padding-right: 15%;
+    }
+
+    @include screen(medium) {
+        padding-right: 22%;               
+    }
 
     &__header {
         display: flex;
@@ -17,16 +26,20 @@
                 font-weight: 500;
                 margin-bottom: 0;
                 margin-top: 11px;
-                width: 95%;
+                width: 90%;
+
+                @include screen(medium) {
+                    width: 85%;   
+                }
             }
         }
     }
 
-    &__text{
+    &__text {
         margin-top: 18px;
 
-         p{
+        p {
             color: #fff;
-         }
+        }
     }
 }

@@ -5,9 +5,9 @@ import features from "@/helpers/data/features";
 const FeaturesContent = (): JSX.Element => {
   const { featuresPoints } = features();
   return (
-    <div className="section-content mt-5">
-      <div className="row gx-5">
-        <div className="col-8">
+    <div className="section-content mt-4 mt-lg-5">
+      <div className="row gx-5 gy-5 gy-md-2">
+        <div className="col-md-6 col-lg-8">
           <div className="cover">
             <Image
               src="/features-img.png"
@@ -18,7 +18,7 @@ const FeaturesContent = (): JSX.Element => {
             />
           </div>
         </div>
-        <div className="col-4">
+        <div className="col-md-6 col-lg-4">
           <div className="points">
             {featuresPoints.map((item, index) => (
               <FeaturesCard key={index} {...item} />

@@ -4,9 +4,14 @@
     width: 100%;
     overflow: hidden;
     padding-top: 4rem;
+    margin-top: -5px;
     padding-bottom: 4rem;
     background-color: $background-color;
     @include container;
+
+    @include screen(small) {
+        padding-top: 6rem;
+    }
 
     .section-header {
         display: flex;
@@ -23,6 +28,11 @@
             text-align: center;
             margin-top: 8px;
             width: 45%;
+
+
+            @include screen(small) {
+                width: 87%;
+            }
         }
     }
 
@@ -31,17 +41,37 @@
         align-items: center;
         height: 100%;
 
+        @include screen(small) {
+            width: 100%;
+            justify-content: center;
+        }
+
         .points {
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             gap: 41px;
+
+
+            @include screen(small) {
+                padding-left: 9.5%;
+                padding-right: 9.5%;
+            }
         }
 
-        .cover{
+        .cover {
             display: flex;
             align-items: center;
+            height: 100%;
+
+
+            @include screen(small) {
+                justify-content: center;
+                padding-left: 8%;
+                padding-right: 8%;
+                text-align: center;
+            }
         }
     }
 }

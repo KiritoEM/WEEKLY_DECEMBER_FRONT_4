@@ -2,8 +2,7 @@
 
 #navbar {
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: inherit;
+    height: 5.6rem;
     position: absolute;
 
     @include screen(small){

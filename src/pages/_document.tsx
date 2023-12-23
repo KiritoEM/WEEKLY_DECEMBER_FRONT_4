@@ -15,6 +15,10 @@ export default function Document() {
           integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
           crossOrigin="anonymous"
         ></script>
+        <link
+          href="https://fonts.cdnfonts.com/css/graphik-trial"
+          rel="stylesheet"
+        />
       </Head>
       <body>
         <Main />

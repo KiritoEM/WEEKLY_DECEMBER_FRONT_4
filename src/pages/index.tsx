@@ -7,6 +7,7 @@ import Content from "@/components/Content";
 import Gallery from "@/components/Gallery";
 import Partners from "@/components/Partners";
 import Testimonials from "@/components/Testimonials";
+import CTA from "@/components/CTA";
 
 const Landing = (): JSX.Element => {
   return (
@@ -19,6 +20,7 @@ const Landing = (): JSX.Element => {
         <Gallery />
         <Partners />
         <Testimonials />
+        <CTA />
       </section>
     </Layout>
   );

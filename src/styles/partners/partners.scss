@@ -1,0 +1,44 @@
+#partners {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 4rem;
+    margin-top: -5px;
+    padding-bottom: 4rem;
+    background-color: $background-color;
+    @include container;
+
+    @include screen(small) {
+        padding-top: 6rem;
+    }
+
+    .section-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            color: #fff;
+            font-weight: 400;
+        }
+
+        p {
+            color: #fff;
+            text-align: center;
+            margin-top: 8px;
+            width: 45%;
+
+
+            @include screen(small) {
+                width: 87%;
+            }
+
+            @include screen(medium) {
+                width: 65%;
+            }
+        }
+    }
+
+    .section-content{
+        width: 100%;
+    }
+}

@@ -5,6 +5,7 @@ import Welcoming from "@/components/Welcoming";
 import Features from "@/components/Features";
 import Content from "@/components/Content";
 import Gallery from "@/components/Gallery";
+import Partners from "@/components/Partners";
 
 const Landing = (): JSX.Element => {
   return (
@@ -15,6 +16,7 @@ const Landing = (): JSX.Element => {
         <Features />
         <Content />
         <Gallery />
+        <Partners />
       </section>
     </Layout>
   );

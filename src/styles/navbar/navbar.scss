@@ -9,6 +9,10 @@
         position: fixed;
     }
 
+    @include screen(medium){
+        position: fixed;
+    }
+
     &__container {
         position: relative;
         z-index: 500;

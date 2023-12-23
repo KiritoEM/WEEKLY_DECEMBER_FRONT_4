@@ -1,10 +1,6 @@
 .welcoming-hero {
     width: 100%;
-    padding-top: 6rem;
-    margin-top: 5.5rem;
-    padding-bottom: 4rem;
     overflow: hidden;
-    background-color: $background-color;
 
     .title {
         display: flex;
@@ -13,7 +9,7 @@
         h1 {
             color: #fff;
             text-align: center;
-            font-size: 2.96em;
+            font-size: 2.94em;
             width: 30%;
             font-weight: 500;
         }
@@ -26,6 +22,8 @@
 
         p {
             color: #fff;
+            width: 35%;
+            text-align: center;
         }
     }
 
@@ -33,6 +31,7 @@
         display: flex;
         justify-content: center;
         gap: 20px;
+        margin-top: 65px;
 
         .btn-1 {
 

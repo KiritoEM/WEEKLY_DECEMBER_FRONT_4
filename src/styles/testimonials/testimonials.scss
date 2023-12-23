@@ -1,0 +1,19 @@
+#testimonials {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 4rem;
+    margin-top: - 5px;
+    padding-bottom: 4rem;
+    background-color: $background-color;
+    @include container;
+
+
+    .title {
+        text-align: center;
+
+        h2 {
+            color: #fff;
+            font-weight: 400;
+        }
+    }
+}

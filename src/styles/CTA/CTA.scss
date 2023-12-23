@@ -7,6 +7,11 @@
     background-color: $background-color;
     @include container;
 
+    @include screen(small) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     &__container {
         width: 100%;
         height: max-content;
@@ -14,19 +19,48 @@
         border-radius: 30px;
         overflow: hidden;
 
+        @include screen(small) {
+            border-radius: 0;
+        }
+
         .section-header {
             padding: 60px;
+
+            @include screen(small) {
+                padding: 50px;
+            }
+
+
+            @include screen(medium) {
+                 height: 120%;
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+            }
 
             .title {
                 h2 {
                     color: #fff;
+                    text-align: center;
                     font-size: 2.5em;
                     font-weight: 400;
+
+                    @include screen(small) {
+                        font-size: 32px;
+                    }
+
+                    @include screen(medium) {
+                        font-size: 24px;
+                    }
                 }
             }
 
             .button {
                 margin-top: 35px;
+
+                @include screen(small) {
+                    text-align: center;
+                }
 
                 .btn {
                     padding: 10px 60px;
@@ -39,15 +73,15 @@
             }
         }
 
-        .section-cover{
-            height: 100%;
+        .section-cover {
+            height: 120%;
             width: 100%;
 
-             img{
+            img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-             }
+            }
         }
     }
 }

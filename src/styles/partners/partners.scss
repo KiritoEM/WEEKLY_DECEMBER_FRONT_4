@@ -38,7 +38,59 @@
         }
     }
 
-    .section-content{
+    .section-content {
         width: 100%;
+        margin-top: 38px;
+
+        .icons {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6%;
+
+            @include screen(small) {
+                padding-left: 12%;
+                padding-right: 12%;
+            }
+
+            .icon {
+                text-align: center;
+
+                @include screen(small) {
+                    width: 25%;
+                    margin-bottom: 35px;
+                }
+
+                img {
+                    width: 40px;
+
+                        @include screen(small){
+                            width: 36.5px;   
+                        }
+                }
+            }
+        }
+
+
+        .button {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 58px;
+
+            @include screen(small) {
+                margin-top: 16px;
+            }
+
+            .btn {
+                padding: 10px 35px;
+                border: 1px solid #fff;
+                border-radius: 0;
+                font-size: 15px;
+                color: #fff;
+                font-weight: 500;
+            }
+        }
     }
 }

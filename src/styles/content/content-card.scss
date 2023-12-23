@@ -3,7 +3,7 @@
     height: max-content;
     background-color: #fff;
     border-radius: 10px;
-    padding: 50px 35px 20px 35px;
+    padding: 50px 35px 24px 35px;
 
     @include screen(small) {
         padding: 42px 25px 25px 25px;
@@ -64,6 +64,7 @@
 
     &__img {
         margin-top: 50px;
+        height: 18rem;
 
         @include screen(small) {
             width: 100%;

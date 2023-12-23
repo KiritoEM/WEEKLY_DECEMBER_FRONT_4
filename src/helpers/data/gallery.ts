@@ -23,12 +23,10 @@ export default function gallery() {
       { img: "/gallery-7.png" },
     ],
     section_reponsive: [
-      { img: "" },
-      { img: "" },
-      { img: "" },
-      { img: "" },
-      { img: "" },
-      { img: "" },
+        { img: "/gallery-8.png" },
+        { img: "/gallery-9.png" },
+        { img: "/gallery-10.png" },
+        { img: "/gallery-11.png" }
     ],
   };
 

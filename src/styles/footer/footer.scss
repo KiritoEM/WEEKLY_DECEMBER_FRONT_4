@@ -7,9 +7,9 @@
     background-color: $background-color;
     @include container;
 
-    @include screen(small){
+    @include screen(small) {
         padding-left: 21%;
-        padding-right: 21%;  
+        padding-right: 21%;
         padding-top: 0;
     }
 
@@ -44,6 +44,14 @@
 
     .contact {
         margin-left: 7%;
+
+        @include screen(small) {
+            margin-left: 0;
+        }
+
+        @include screen(medium) {
+            margin-left: 0;
+        }
 
         .adress {
             display: flex;

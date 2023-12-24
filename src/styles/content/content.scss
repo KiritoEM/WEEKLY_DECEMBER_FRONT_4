@@ -23,16 +23,6 @@
             color: #fff;
             text-align: center;
             margin-top: 8px;
-            width: 45%;
-
-
-            @include screen(small) {
-                width: 80%;
-            }
-
-            @include screen(medium) {
-                width: 82%;
-            }
         }
     }
 

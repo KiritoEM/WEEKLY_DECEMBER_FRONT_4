@@ -24,17 +24,6 @@
         p {
             color: #fff;
             text-align: center;
-            margin-top: 8px;
-            width: 45%;
-
-
-            @include screen(small) {
-                width: 87%;
-            }
-
-            @include screen(medium) {
-                width: 65%;
-            }
         }
     }
 
@@ -101,7 +90,7 @@
                 }
 
                 #img-2 {
-                    width: 35rem;
+                    width: 45rem;
                 }
             }
         }

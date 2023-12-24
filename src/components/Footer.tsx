@@ -25,7 +25,7 @@ const Footer = (): JSX.Element => {
           </div>
         ))}
 
-        <div className="col-md-6 col-lg-4">
+        <div className="col-md-6 col-lg-5">
           <div className="contact">
             <div className="adress">
               <div className="icon">

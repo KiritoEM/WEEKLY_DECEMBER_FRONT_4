@@ -19,6 +19,7 @@ export default function Document() {
           href="https://fonts.cdnfonts.com/css/graphik-trial"
           rel="stylesheet"
         />
+        <link rel="icon" href="/logo dark.png" />
       </Head>
       <body>
         <Main />

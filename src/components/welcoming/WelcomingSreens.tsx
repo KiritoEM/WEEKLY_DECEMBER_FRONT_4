@@ -9,7 +9,9 @@ const WelcomingSreens = (): JSX.Element => {
         width={2000}
         height={1200}
         layout="responsive"
+        className="screens"
       />
+      <img src="/Gradient.png" alt="" />
     </section>
   );
 };

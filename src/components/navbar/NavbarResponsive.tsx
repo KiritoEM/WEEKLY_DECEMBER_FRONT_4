@@ -12,7 +12,7 @@ const NavbarResponsive : React.FC<IopenMenu> = ({openMenu}): JSX.Element => {
         {menuItems.map((item, index) => (
           <li key={index}>{item.label}</li>
         ))}
-        <li id="footer">
+        <li id="footer-nav">
           <div className="line"></div>
           <div className="text">
             <p>Work at the speed of thought.</p>
